@@ -1,32 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+
 .conteiner {
     background-color: hsl(0, 0%, 96%);
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    margin: 0 auto;
-    width: 1440px;
-    /* padding: 0 10rem; */
-    grid-gap: 40px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+    margin: 100px auto;
+    max-width: 1440px;
+    height: 1540px;
+    grid-gap: 30px;
     font-family: "DM sans";
+    padding: 3rem;
 }
 
 .conteudo {
     border-radius: 20px;
-    padding: 2em;
-
 }
 
 .create-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(31, 66%, 93%);
     grid-area: 1 / 1 / 2 / 1;
+    padding: 2rem 1rem;
+}
+
+.create-post h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0 3rem;
+}
+
+.create-post h3 i {
+    color: hsl(256, 67%, 59%);
+}
+
+.create-post img {
+    width: 300px;
+    padding: 2rem;
 }
 
 .social-media {
     background-color: hsl(256, 67%, 59%);
+    color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     padding: 2em;
     grid-area: 1 / 2 / 1 / 4;
 }
+
+.social-media h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.social-media img {
+    width: 300px;
+}
+
+.social-media p {
+    font-size: 1.5rem;
+}
+
+.time-to-post {
+    background-color: hsl(254, 88%, 90%);
+    grid-area: 1 / 4 / 1;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.time-to-post h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.time-to-post img {
+    width: 250px;
+    padding: 1rem 0;
+}
+
+.write-content {
+    grid-area: 2 / 1 / 4 / 1;
+    margin-top: 5rem;
+}
+
