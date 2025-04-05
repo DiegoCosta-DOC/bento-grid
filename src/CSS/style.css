@@ -5,10 +5,10 @@
     background-color: hsl(0, 0%, 96%);
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 360px 180px 180px 360px);
     margin: 100px auto;
     max-width: 1440px;
-    height: 1540px;
+    max-height: 1440px;
     grid-gap: 30px;
     font-family: "DM sans";
     padding: 3rem;
@@ -21,17 +21,18 @@
 .create-post {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    gap: 3rem;
     background-color: hsl(31, 66%, 93%);
-    grid-area: 1 / 1 / 2 / 1;
-    padding: 2rem 1rem;
+    grid-area: 1 / 1 / 3 / 1;
+    padding: 0 1rem;
 }
 
 .create-post h3 {
     font-size: 2.5rem;
     font-weight: 500;
-    padding: 0 3rem;
+    padding: 2rem 2rem;
 }
 
 .create-post h3 i {
@@ -61,6 +62,10 @@
     text-align: center;
 }
 
+.social-media span {
+    color: hsl(39, 100%, 71%);
+}
+
 .social-media img {
     width: 300px;
 }
@@ -70,8 +75,11 @@
 }
 
 .time-to-post {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     background-color: hsl(254, 88%, 90%);
-    grid-area: 1 / 4 / 1;
+    grid-area: 1 / 5 / 4 / 4;
     overflow: hidden;
     padding: 2rem;
 }
@@ -82,12 +90,101 @@
 }
 
 .time-to-post img {
-    width: 250px;
+    width: 400px;
     padding: 1rem 0;
 }
 
-.write-content {
-    grid-area: 2 / 1 / 4 / 1;
-    margin-top: 5rem;
+.time-to-post p {
+    font-size: 1.5rem;
 }
 
+.write-content {
+    grid-area: 3 / 1 / 5 / 1;
+    background-color: hsl(39, 100%, 71%);
+    padding: 2rem;
+}
+
+.write-content h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.write-content img {
+    width: 250px;
+    object-fit: contain;
+}
+
+.multiple-platforms {
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: #ffffff;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.multiple-platforms h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.multiple-platforms img {
+    width: 400px;
+
+}
+
+.calendar {
+    grid-area: 2 / 3 / 4 / 4;
+    background-color: hsl(39, 100%, 71%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.calendar h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.calendar img {
+    width: 250px;
+}
+
+.audience-growth {
+    grid-area: 4 / 2 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.audience-growth h3 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.follower-growth {
+    grid-area: 4 / 3 / 5 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(256, 67%, 59%);
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.follower-growth img {
+    width: 300px;
+}
+
+.follower-growth h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
